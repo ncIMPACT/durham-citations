@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # Removing data
 data/
+
+# Removing API Key
+scripts/api-key.R
