@@ -253,7 +253,7 @@ p1 <- test %>%
   geom_text(data = filter(test, percent < 0.1), aes(y = percent + 0.05, label = paste0(percent(percent, accuracy = 0.01), "\n", comma(n, accuracy = 1))), color = "#00467f", size = 5, family = "Roboto Condensed") +
   scale_y_continuous(labels = percent_format(), expand = expansion(mult = c(0,0.04))) +
   scale_x_discrete(labels = test$label) +
-  labs(x = NULL, y = NULL, title = "Citations and Block Group Per Capita Income for Durham County", 
+  labs(x = NULL, y = NULL, title = "Block Group Per Capita Income for Durham County", 
        subtitle = "Per Capita Income block groups separated into 10 equal interval categories") +
   theme_minimal() +
   theme(axis.text = element_text(family = "Roboto Condensed", size = 10),
@@ -282,7 +282,7 @@ p2 <- test %>%
   geom_text(data = filter(test, percent < 0.1), aes(y = percent + 0.04, label = paste0(percent(percent, accuracy = 0.01), "\n", comma(n, accuracy = 1))), color = "#00467f", size = 5, family = "Roboto Condensed") +
   scale_y_continuous(labels = percent_format(), expand = expansion(mult = c(0,0.04))) +
   scale_x_discrete(labels = test$label) +
-  labs(x = NULL, y = NULL, title = "Block Group Per Capita Income for Durham County", 
+  labs(x = NULL, y = NULL, title = "Citations and Block Group Per Capita Income for Durham County", 
        subtitle = "Per Capita Income block groups separated into 10 equal interval categories") +
   theme_minimal() +
   theme(axis.text = element_text(family = "Roboto Condensed", size = 10),
